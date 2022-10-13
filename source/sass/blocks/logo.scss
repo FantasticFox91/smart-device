@@ -1,0 +1,15 @@
+.logo__icon {
+  display: none;
+
+  @media (max-width: $vp-1024) {
+    display: block;
+  }
+}
+
+.logo__icon--showtablet {
+  display: block;
+
+  @media (max-width: $vp-1024) {
+    display: none;
+  }
+}

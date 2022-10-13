@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="'Smart Device' - умные технологии">
-    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
-    <link rel="manifest" href="img/favicons/site.webmanifest">
-    <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <title>Smart Device</title>
@@ -20,8 +20,35 @@
       <header>
         <div class="container"></div>
       </header>
-      <main>
-        <section class="intro">
+      <main class="main">
+        <header class="header">
+          <div class="container header__container">
+            <div class="logo">
+              <a class="logo__link">
+                <svg class="logo__icon" width="35" height="35" viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="img/sprite_auto.svg#logo-mobile"></use>
+                </svg>
+                <svg class="logo__icon logo__icon--showtablet" width="215" height="55" viewBox="0 0 215 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="img/sprite_auto.svg#logo-desktop"></use>
+                </svg>
+              </a>
+            </div>
+            <ul class="header__list">
+              <li class="header__item">
+                <a class="header__link header__link--mail" href="mailto:info@sd.ru">
+                  <span class="header__text">info@sd.ru</span>
+                </a>
+              </li>
+              <li class="header__item">
+                <a class="header__link header__link--phone" href="tel:84950005252">
+                  <spna class="header__text">+7 (495) 000 52 52</spna>
+                </a>
+              </li>
+            </ul>
+            <a href="#" class="header__button">Заказать звонок</a>
+          </div>
+        </header>
+        <!-- <section class="intro">
           <div class="container">
             <h1>Тестовая страница.</h1>
             <p>На данной странице показан пример модальных окон.</p>
@@ -29,7 +56,7 @@
             <p><a class="btn" href="#" data-open-modal="feedback">modal--feedback link</a></p>
             <p><a class="btn" href="#" data-open-modal="success">modal--success link</a></p>
           </div>
-        </section>
+        </section> -->
       </main>
       <footer>
         <div class="container"></div>

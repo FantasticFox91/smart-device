@@ -1,0 +1,71 @@
+.header {
+  background: $black-pearl-to-bottom;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 60px;
+  list-style-type: none;
+
+  @media (max-width: $vp-1024) {
+    gap: 20px;
+  }
+}
+
+.header__item {
+  padding-top: 45px;
+  padding-bottom: 51px;
+}
+
+.header__link {
+  position: relative;
+  padding-left: 35px;
+  padding-top: 45px;
+  padding-bottom: 51px;
+  color: $color-alice-blue;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: calc(50% - 13px);
+    left: 0;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.header__link--mail::before {
+  background: url("../../img/sprite/mail.svg") no-repeat;
+}
+
+.header__link--phone::before {
+  background: url("../../img/sprite/phone.svg") no-repeat;
+}
+
+.header__button {
+  display: block;
+  padding: 10px 15px 12px;
+  border: 1px solid $color-alice-blue;
+  border-radius: 3px;
+  text-transform: uppercase;
+  line-height: 16px;
+  color: $color-alice-blue;
+
+  @media (max-width: $vp-1024) {
+    display: none;
+  }
+}
+
+.header__text {
+  @media (max-width: $vp-1024) {
+    display: none;
+  }
+}
