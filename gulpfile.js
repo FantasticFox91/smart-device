@@ -128,13 +128,13 @@ const start = gulp.series(build, syncServer);
 
 const createWebp = () => {
   const root = '';
-  return gulp.src(`source/img/${root}**/*.{png,jpg}`)
+  return gulp.src([`source/img/${root}**/*.{png,jpg}`, '!source/img/favicon/*.png'])
     .pipe(webp({quality: 90}))
     .pipe(gulp.dest(`source/img/${root}`));
 };
 
 const optimizeImages = () => {
-  return gulp.src('build/img/**/*.{png,jpg}')
+  return gulp.src(['build/img/**/*.{png,jpg}', '!source/img/favicon/*.png'])
       .pipe(imagemin([
         imagemin.optipng({optimizationLevel: 3}),
         imagemin.mozjpeg({quality: 75, progressive: true}),
