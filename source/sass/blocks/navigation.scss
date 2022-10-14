@@ -1,0 +1,25 @@
+.navigation {
+  margin-right: 30px;
+  overflow: hidden;
+
+  @include vp-767 {
+    margin-right: 0;
+  }
+}
+
+.navigation__list {
+  display: grid;
+  grid-template-columns: repeat(2, 220px);
+  gap: 8px 30px;
+  max-height: 130px;
+
+  @include vp-767 {
+    padding-right: 0;
+  }
+
+  @include vp-1023 {
+    grid-template-columns: 1fr;
+    max-height: 100%;
+    padding-right: 50px;
+  }
+}

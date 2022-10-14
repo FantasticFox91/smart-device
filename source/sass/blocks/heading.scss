@@ -1,0 +1,29 @@
+.heading {
+  margin: 0;
+  font-family: $ff-secondary;
+  font-size: 36px;
+  line-height: 51px;
+  text-transform: uppercase;
+}
+
+.heading--footer {
+  position: relative;
+  margin-bottom: 20px;
+  padding-top: 8px;
+  font-size: 15px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  font-weight: 400;
+
+  @include vp-1023 {
+    padding-top: 0;
+  }
+}
+
+.heading--close {
+  @include vp-767 {
+    &::before {
+      transform: rotate(0deg);
+    }
+  }
+}

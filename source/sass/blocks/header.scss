@@ -1,5 +1,16 @@
 .header {
   background: $black-pearl-to-bottom;
+  position: fixed;
+  width: 100%;
+  min-height: 120px;
+
+  @include vp-767 {
+    min-height: 70px;
+  }
+
+  @include vp-1023 {
+    min-height: 100px;
+  }
 }
 
 .header__container {
@@ -14,7 +25,7 @@
   }
 
   @include vp-1023 {
-    padding: 15px 70px 30px 50px;
+    padding: 15px 70px 25px 50px;
   }
 
   @include vp-1439 {
@@ -57,6 +68,7 @@
   padding: 20px 0 20px 35px;
   font: inherit;
   color: $color-alice-blue;
+  transition: $trans-default;
 
   &::before {
     position: absolute;
@@ -72,6 +84,12 @@
 
     &::before {
       left: 10px;
+    }
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      transform: scale(1.05);
     }
   }
 }
@@ -98,6 +116,11 @@
   line-height: 16px;
   color: $color-alice-blue;
   letter-spacing: 0.05em;
+  transition: $trans-default;
+
+  &:hover {
+    background-color: $color-deep-sky-blue;
+  }
 
   @include vp-1023 {
     display: none;
