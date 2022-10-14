@@ -1,7 +1,16 @@
+.logo {
+  margin-top: 5px;
+  margin-right: 160px;
+
+  @include vp-767 {
+    margin-right: 0;
+  }
+}
+
 .logo__icon {
   display: none;
 
-  @media (max-width: $vp-1024) {
+  @include vp-767 {
     display: block;
   }
 }
@@ -9,7 +18,7 @@
 .logo__icon--showtablet {
   display: block;
 
-  @media (max-width: $vp-1024) {
+  @include vp-767 {
     display: none;
   }
 }
