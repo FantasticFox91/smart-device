@@ -626,9 +626,9 @@ button,
 
 .container {
   width: 100%;
-  max-width: 1920px;
+  max-width: 1220px;
   margin: 0 auto;
-  padding: 0 40px;
+  padding: 0;
 }
 
 .main {
@@ -762,6 +762,68 @@ button,
   line-height: 16px;
   letter-spacing: 0.05em;
   font-weight: 400;
+}
+
+.main-block {
+  background: url("../../img/about-bg-desktop.jpg") no-repeat;
+  background-size: cover;
+}
+
+.main-block__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 970px;
+  margin-top: -120px;
+  padding-top: 305px;
+  padding-bottom: 280px;
+  color: #f2f5f7;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.main-block__container h1 {
+  margin: 0;
+  margin-bottom: 32px;
+  text-transform: uppercase;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 80px;
+  line-height: 94px;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+}
+
+.main-block__container p {
+  margin: 0;
+  margin-bottom: 47px;
+  padding-right: 280px;
+  font-size: 22px;
+  line-height: 34px;
+}
+
+.main-block__container a {
+  display: block;
+  max-width: 410px;
+  padding: 15px 25px 19px;
+  text-align: center;
+  background-color: #00b2ff;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #f2f5f7;
+  text-transform: uppercase;
+  border-radius: 3px;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.main-block--showmobile {
+  display: none;
 }
 
 .footer {
@@ -1011,8 +1073,20 @@ button,
     margin-right: 0;
   }
 
+  .main-block__container {
+    padding-top: 305px;
+    padding-bottom: 280px;
+  }
+
   .footer__container {
     padding: 49px 0 44px 25px;
+  }
+}
+
+@media (max-width: 1439px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1439px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 1439px) and (min-resolution: 144dpi), (max-width: 1439px) and (min-resolution: 1.5dppx) {
+  .main-block {
+    background: url("../../img/about-bg-desktop.webp") no-repeat;
+    background-size: cover;
   }
 }
 
@@ -1053,6 +1127,32 @@ button,
     padding-top: 0;
   }
 
+  .main-block {
+    background: url("../../img/about-bg-tablet.jpg") no-repeat;
+    background-size: cover;
+  }
+
+  .main-block__container {
+    margin-top: -120px;
+    padding-top: 180px;
+    padding-bottom: 205px;
+  }
+
+  .main-block__container h1 {
+    margin-bottom: 0;
+    font-size: 64px;
+    line-height: 75px;
+  }
+
+  .main-block__container p {
+    padding-right: 50px;
+    margin-bottom: 57px;
+  }
+
+  .main-block__container a {
+    margin-left: 45px;
+  }
+
   .footer__container {
     display: -ms-grid;
     display: grid;
@@ -1084,6 +1184,13 @@ button,
     grid-auto-flow: row;
     max-height: 100%;
     padding-right: 50px;
+  }
+}
+
+@media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 1023px) and (min-resolution: 144dpi), (max-width: 1023px) and (min-resolution: 1.5dppx) {
+  .main-block {
+    background: url("../../img/about-bg-tablet.webp") no-repeat;
+    background-size: cover;
   }
 }
 
@@ -1124,6 +1231,44 @@ button,
     -webkit-transform: rotate(0deg);
     -ms-transform: rotate(0deg);
     transform: rotate(0deg);
+  }
+
+  .main-block {
+    background: url("../../img/about-bg-mobile.jpg") no-repeat;
+    background-size: cover;
+  }
+
+  .main-block__container {
+    padding: 150px 25px 190px;
+  }
+
+  .main-block__container h1 {
+    margin-bottom: 8px;
+    font-size: 36px;
+    line-height: 42px;
+  }
+
+  .main-block__container p {
+    margin-bottom: 44px;
+    padding-right: 0;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .main-block__container a {
+    margin-left: 0;
+    padding: 12px 30px;
+    max-width: 270px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .main-block--showtablet {
+    display: none;
+  }
+
+  .main-block--showmobile {
+    display: block;
   }
 
   .footer__container {
@@ -1267,6 +1412,13 @@ button,
   }
 }
 
+@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
+  .main-block {
+    background: url("../../img/about-bg-mobile.webp") no-repeat;
+    background-size: cover;
+  }
+}
+
 @media (hover: hover) {
   .header__link:hover {
     -webkit-transform: scale(1.05);
@@ -1276,6 +1428,10 @@ button,
 
   .header__button:hover {
     background-color: #00b2ff;
+  }
+
+  .main-block__container a:hover {
+    background-color: #000000;
   }
 
   .footer__link:hover {

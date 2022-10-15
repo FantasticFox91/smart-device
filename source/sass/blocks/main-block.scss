@@ -1,0 +1,148 @@
+.main-block {
+  background: url('../../img/about-bg-desktop.jpg') no-repeat;
+  background-size: cover;
+
+  @include vp-1439 {
+    @include retina {
+      background: url('../../img/about-bg-desktop.webp') no-repeat;
+      background-size: cover;
+    }
+  }
+
+  @include vp-1023 {
+    background: url('../../img/about-bg-tablet.jpg') no-repeat;
+    background-size: cover;
+
+    @include retina {
+      background: url('../../img/about-bg-tablet.webp') no-repeat;
+      background-size: cover;
+    }
+  }
+
+  @include vp-767 {
+    background: url('../../img/about-bg-mobile.jpg') no-repeat;
+    background-size: cover;
+
+    @include retina {
+      background: url('../../img/about-bg-mobile.webp') no-repeat;
+      background-size: cover;
+    }
+  }
+}
+
+.main-block__container {
+  display: flex;
+  max-width: 970px;
+  margin-top: -120px;
+  padding-top: 305px;
+  padding-bottom: 280px;
+  color: $color-alice-blue;
+  flex-direction: column;
+
+  @include vp-1439 {
+    padding-top: 305px;
+    padding-bottom: 280px;
+  }
+
+  @include vp-1023 {
+    margin-top: -120px;
+    padding-top: 180px;
+    padding-bottom: 205px;
+  }
+
+  @include vp-767 {
+    padding: 150px 25px 190px;
+  }
+}
+
+.main-block__container h1 {
+  margin: 0;
+  margin-bottom: 32px;
+  text-transform: uppercase;
+  font-family: $ff-secondary;
+  font-size: 80px;
+  line-height: 94px;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+
+  @include vp-1023 {
+    margin-bottom: 0;
+    font-size: 64px;
+    line-height: 75px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 8px;
+    font-size: 36px;
+    line-height: 42px;
+  }
+}
+
+.main-block__container p {
+  margin: 0;
+  margin-bottom: 47px;
+  padding-right: 280px;
+  font-size: 22px;
+  line-height: 34px;
+
+  @include vp-1023 {
+    padding-right: 50px;
+    margin-bottom: 57px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 44px;
+    padding-right: 0;
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+
+.main-block__container a {
+  display: block;
+  max-width: 410px;
+  padding: 15px 25px 19px;
+  text-align: center;
+  background-color: $color-deep-sky-blue;
+  font-family: $ff-secondary;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: $color-alice-blue;
+  text-transform: uppercase;
+  border-radius: 3px;
+  transition: $trans-default;
+
+  @include vp-1023 {
+    margin-left: 45px;
+  }
+
+  @include vp-767 {
+    margin-left: 0;
+    padding: 12px 30px;
+    max-width: 270px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      background-color: $color-default-black;
+    }
+  }
+}
+
+.main-block--showtablet {
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.main-block--showmobile {
+  display: none;
+
+  @include vp-767 {
+    display: block;
+  }
+}
