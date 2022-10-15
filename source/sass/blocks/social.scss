@@ -20,3 +20,14 @@
   height: 40px;
   padding: 5px;
 }
+
+.social__icon {
+  fill: $color-alice-blue-social;
+  transition: $trans-default;
+}
+
+@media (hover: hover) {
+  .social__icon:hover {
+    fill: $color-deep-sky-blue;
+  }
+}

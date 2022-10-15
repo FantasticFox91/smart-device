@@ -66,7 +66,7 @@
   position: relative;
   display: block;
   padding: 20px 0 20px 35px;
-  font: inherit;
+  font-family: $ff-main;
   color: $color-alice-blue;
   transition: $trans-default;
 
@@ -118,12 +118,14 @@
   letter-spacing: 0.05em;
   transition: $trans-default;
 
-  &:hover {
-    background-color: $color-deep-sky-blue;
-  }
-
   @include vp-1023 {
     display: none;
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      background-color: $color-deep-sky-blue;
+    }
   }
 }
 

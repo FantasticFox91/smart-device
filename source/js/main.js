@@ -4,6 +4,14 @@ import {initModals} from './modules/modals/init-modals';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
+  if (document.querySelector('.accordion')) {
+    document.querySelectorAll('.accordion').forEach((el) => el.classList.toggle('accordion--close'));
+    document.querySelector('.footer').addEventListener('click', (e) => {
+      if (e.target.classList.contains('accordion')) {
+        e.target.classList.toggle('accordion--close');
+      }
+    });
+  }
 
   // Utils
   // ---------------------------------
