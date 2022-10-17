@@ -1,0 +1,132 @@
+.about__container {
+  position: relative;
+  padding-bottom: 120px;
+  padding-left: 250px;
+
+  &::before {
+    position: absolute;
+    content: '';
+    width: 150px;
+    height: 320px;
+    left: 0;
+    background: url('../../img/2022.png');
+    background: url('../../img/2022.webp');
+    background-size: contain;
+  }
+
+  @include retina {
+    &::before {
+      background: url('../../img/2022@2x.png');
+      background: url('../../img/2022@2x.webp');
+      background-size: contain;
+    }
+  }
+
+  @include vp-1439 {
+    padding-bottom: 120px;
+    padding-left: 250px;
+  }
+
+  @include vp-1023 {
+    padding: 0 50px 80px 225px;
+
+    &::before {
+      top: 5px;
+      left: 46px;
+    }
+  }
+
+  @include vp-767 {
+    padding: 0 25px 80px;
+    &::before {
+      display: none;
+    }
+  }
+}
+
+.about h2 {
+  margin-bottom: 14px;
+
+  @include vp-767 {
+    margin-bottom: 12px;
+    font-size: 28px;
+    line-height: 39px;
+  }
+}
+
+.about p {
+  margin: 0;
+  line-height: 21px;
+
+  @include vp-767 {
+    font-size: 14px;
+    line-height: 19px;
+  }
+}
+
+.about p:first-of-type {
+  margin-bottom: 22px;
+
+  @include vp-767 {
+    margin-bottom: 18px;
+  }
+}
+
+.about a {
+  display: block;
+  max-width: 180px;
+  margin-top: 42px;
+  padding: 14px 13px 13px 12px;
+  font-family: $ff-secondary;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  font-weight: 700;
+  color: $color-deep-sky-blue;
+  text-align: center;
+  text-transform: uppercase;
+  border: 1px solid $color-deep-sky-blue;
+  border-radius: 3px;
+  transition: $trans-default;
+
+  @include vp-1023 {
+    margin-top: 22px;
+  }
+
+  @include vp-767 {
+    max-width: 160px;
+    margin-top: 14px;
+    padding-top: 8px;
+    padding-bottom: 9px;
+  }
+}
+
+.about__showtablet {
+  display: block;
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.about .about__text {
+  position: relative;
+  opacity: 0;
+  max-height: 0;
+  margin-bottom: 0;
+  transition: $trans-default;
+  z-index: -1;
+}
+
+.about .about__text--show {
+  opacity: 1;
+  max-height: 200px;
+  margin-bottom: 10px;
+}
+
+@media (hover: hover) {
+  .about a:hover {
+    background-color: $color-deep-sky-blue;
+    color: $color-default-white;
+  }
+}

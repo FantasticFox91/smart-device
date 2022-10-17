@@ -5,11 +5,24 @@ import {initModals} from './modules/modals/init-modals';
 
 window.addEventListener('DOMContentLoaded', () => {
   if (document.querySelector('.accordion')) {
-    document.querySelectorAll('.accordion').forEach((el) => el.classList.toggle('accordion--close'));
+    document.querySelectorAll('.accordion__heading').forEach((el) => el.classList.toggle('accordion__heading--close'));
     document.querySelector('.footer').addEventListener('click', (e) => {
-      if (e.target.classList.contains('accordion')) {
-        e.target.classList.toggle('accordion--close');
+      if (e.target.classList.contains('accordion__heading')) {
+        e.target.classList.toggle('accordion__heading--close');
       }
+    });
+  }
+
+  if (document.querySelector('[data-show-more]')) {
+    document.querySelector('[data-show-more]').addEventListener('click', (e) => {
+      e.preventDefault();
+      if (document.querySelector('.about__text--show')) {
+        document.querySelector('[data-show-more]').textContent = 'Подробнее';
+        document.querySelectorAll('.about__text').forEach((text) => text.classList.remove('about__text--show'));
+        return;
+      }
+      document.querySelector('[data-show-more]').textContent = 'Скрыть';
+      document.querySelectorAll('.about__text').forEach((text) => text.classList.add('about__text--show'));
     });
   }
 

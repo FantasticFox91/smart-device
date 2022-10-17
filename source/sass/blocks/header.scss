@@ -3,6 +3,7 @@
   position: fixed;
   width: 100%;
   min-height: 120px;
+  z-index: 2;
 
   @include vp-767 {
     min-height: 70px;

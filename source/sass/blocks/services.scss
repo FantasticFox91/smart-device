@@ -1,0 +1,306 @@
+.services {
+  padding: 65px 0 140px;
+  background-color: $color-black-pearl;
+
+  @include vp-1439 {
+    padding: 65px 20px 140px;
+  }
+
+  @include vp-1023 {
+    padding-top: 55px;
+    padding-bottom: 75px;
+  }
+
+  @include vp-767 {
+    padding-top: 46px;
+    padding-bottom: 86px;
+  }
+}
+
+.services h2 {
+  color: $color-default-white;
+  margin-bottom: 54px;
+
+  @include vp-1023 {
+    margin-bottom: 38px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 28px;
+  }
+}
+
+.services__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  gap: 85px;
+
+  @include vp-1023 {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+.services__link {
+  position: relative;
+  display: block;
+  max-width: 350px;
+  padding: 47px 140px 544px 40px;
+  transition: $trans-default;
+
+  @include vp-1023 {
+    margin: 0 auto;
+    max-width: 670px;
+    padding: 37px 475px 153px 45px;
+  }
+
+  @include vp-767 {
+    width: 100%;
+    padding: 26px 105px 164px 30px;
+  }
+}
+
+.services__link--production {
+  background: url('../../img/production-desktop.jpg') no-repeat;
+  background-size: cover;
+
+  @include vp-1439 {
+    @include retina {
+      background: $color-deep-sky-blue, url('../../img/production-desktop@2x.jpg') no-repeat;
+      background-size: cover;
+    }
+  }
+
+  @include vp-1023 {
+    background: $color-deep-sky-blue, url('../../img/production-tablet.jpg') no-repeat;
+    background-size: cover;
+
+    @include retina {
+      background: $color-deep-sky-blue, url('../../img/production-tablet@2x.jpg') no-repeat;
+      background-size: cover;
+    }
+  }
+
+  @include vp-767 {
+    background: $color-deep-sky-blue, url('../../img/production-mobile.jpg') no-repeat;
+    background-size: cover;
+
+    @include retina {
+      background: $color-deep-sky-blue, url('../../img/production-mobile@2x.jpg') no-repeat;
+      background-size: cover;
+    }
+  }
+}
+
+.services__link--production {
+  background: url('../../img/production-desktop.webp') no-repeat;
+  background-size: cover;
+
+  @include vp-1439 {
+    @include retina {
+      background: $color-deep-sky-blue, url('../../img/production-desktop@2x.webp') no-repeat;
+      background-size: cover;
+    }
+  }
+
+  @include vp-1023 {
+    background: $color-deep-sky-blue, url('../../img/production-tablet.webp') no-repeat;
+    background-size: cover;
+
+    @include retina {
+      background: $color-deep-sky-blue, url('../../img/production-tablet@2x.webp') no-repeat;
+      background-size: cover;
+    }
+  }
+
+  @include vp-767 {
+    background: $color-deep-sky-blue, url('../../img/production-mobile.webp') no-repeat;
+    background-size: cover;
+
+    @include retina {
+      background: $color-deep-sky-blue, url('../../img/production-mobile@2x.webp') no-repeat;
+      background-size: cover;
+    }
+  }
+}
+
+.services__link--mounting {
+  background: url('../../img/mounting-desktop.jpg') no-repeat;
+  background-size: cover;
+
+  @include vp-1439 {
+    @include retina {
+      background: $color-deep-sky-blue, url('../../img/mounting-desktop@2x.jpg') no-repeat;
+      background-size: cover;
+    }
+  }
+
+  @include vp-1023 {
+    background: $color-deep-sky-blue, url('../../img/mounting-tablet.jpg') no-repeat;
+    background-size: cover;
+
+    @include retina {
+      background: $color-deep-sky-blue, url('../../img/mounting-tablet@2x.jpg') no-repeat;
+      background-size: cover;
+    }
+  }
+
+  @include vp-767 {
+    background: $color-deep-sky-blue, url('../../img/mounting-mobile.jpg') no-repeat;
+    background-size: cover;
+
+    @include retina {
+      background: $color-deep-sky-blue, url('../../img/mounting-mobile@2x.jpg') no-repeat;
+      background-size: cover;
+    }
+  }
+}
+
+.services__link--mounting {
+  background: url('../../img/mounting-desktop.webp') no-repeat;
+  background-size: cover;
+
+  @include vp-1439 {
+    @include retina {
+      background: $color-deep-sky-blue, url('../../img/mounting-desktop@2x.webp') no-repeat;
+      background-size: cover;
+    }
+  }
+
+  @include vp-1023 {
+    background: $color-deep-sky-blue, url('../../img/mounting-tablet.webp') no-repeat;
+    background-size: cover;
+
+    @include retina {
+      background: $color-deep-sky-blue, url('../../img/mounting-tablet@2x.webp') no-repeat;
+      background-size: cover;
+    }
+  }
+
+  @include vp-767 {
+    background: $color-deep-sky-blue, url('../../img/mounting-mobile.webp') no-repeat;
+    background-size: cover;
+
+    @include retina {
+      background: $color-deep-sky-blue, url('../../img/mounting-mobile@2x.webp') no-repeat;
+      background-size: cover;
+    }
+  }
+}
+
+.services__link--components {
+  background: url('../../img/components-desktop.jpg') no-repeat;
+  background-size: cover;
+
+  @include vp-1439 {
+    @include retina {
+      background: $color-deep-sky-blue, url('../../img/components-desktop@2x.jpg') no-repeat;
+      background-size: cover;
+    }
+  }
+
+  @include vp-1023 {
+    background: $color-deep-sky-blue, url('../../img/components-tablet.jpg') no-repeat;
+    background-size: cover;
+
+    @include retina {
+      background: $color-deep-sky-blue, url('../../img/components-tablet@2x.jpg') no-repeat;
+      background-size: cover;
+    }
+  }
+
+  @include vp-767 {
+    background: $color-deep-sky-blue, url('../../img/components-mobile.jpg') no-repeat;
+    background-size: cover;
+
+    @include retina {
+      background: $color-deep-sky-blue, url('../../img/components-mobile@2x.jpg') no-repeat;
+      background-size: cover;
+    }
+  }
+}
+
+.services__link--components {
+  background: url('../../img/components-desktop.webp') no-repeat;
+  background-size: cover;
+
+  @include vp-1439 {
+    @include retina {
+      background: $color-deep-sky-blue, url('../../img/components-desktop@2x.webp') no-repeat;
+      background-size: cover;
+    }
+  }
+
+  @include vp-1023 {
+    background: $color-deep-sky-blue, url('../../img/components-tablet.webp') no-repeat;
+    background-size: cover;
+
+    @include retina {
+      background: $color-deep-sky-blue, url('../../img/components-tablet@2x.webp') no-repeat;
+      background-size: cover;
+    }
+  }
+
+  @include vp-767 {
+    background: $color-deep-sky-blue, url('../../img/components-mobile.webp') no-repeat;
+    background-size: cover;
+
+    @include retina {
+      background: $color-deep-sky-blue, url('../../img/components-mobile@2x.webp') no-repeat;
+      background-size: cover;
+    }
+  }
+}
+
+.services__subheading {
+  margin: 0;
+  font-family: $ff-secondary;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
+  color: $color-default-white;
+
+  @include vp-767 {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+.services__button {
+  position: absolute;
+  display: flex;
+  padding: 0;
+  padding-left: 4px;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  right: 0;
+  width: 60px;
+  height: 60px;
+  border: none;
+  border-top-left-radius: 3px;
+  background-color: $color-deep-sky-blue;
+  cursor: pointer;
+
+  @include vp-767 {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.services__button svg {
+  transition: $trans-default;
+  fill: transparent;
+}
+
+@media (hover: hover) {
+  .services__link:hover {
+    outline: 1px solid $color-deep-sky-blue;
+  }
+
+  .services__button:hover svg {
+    transform: scale(1.5);
+  }
+}
