@@ -17,6 +17,16 @@
   }
 }
 
+.services__container {
+  @include vp-1023 {
+    padding: 0 30px;
+  }
+
+  @include vp-767 {
+    padding: 0 5px;
+  }
+}
+
 .services h2 {
   color: $color-default-white;
   margin-bottom: 54px;
@@ -63,192 +73,192 @@
 }
 
 .services__link--production {
-  background: url('../../img/production-desktop.jpg') no-repeat;
+  background: url("../../img/production-desktop.jpg") no-repeat;
   background-size: cover;
 
   @include vp-1439 {
     @include retina {
-      background: $color-deep-sky-blue, url('../../img/production-desktop@2x.jpg') no-repeat;
+      background: $color-deep-sky-blue, url("../../img/production-desktop@2x.jpg") no-repeat;
       background-size: cover;
     }
   }
 
   @include vp-1023 {
-    background: $color-deep-sky-blue, url('../../img/production-tablet.jpg') no-repeat;
+    background: $color-deep-sky-blue, url("../../img/production-tablet.jpg") no-repeat;
     background-size: cover;
 
     @include retina {
-      background: $color-deep-sky-blue, url('../../img/production-tablet@2x.jpg') no-repeat;
+      background: $color-deep-sky-blue, url("../../img/production-tablet@2x.jpg") no-repeat;
       background-size: cover;
     }
   }
 
   @include vp-767 {
-    background: $color-deep-sky-blue, url('../../img/production-mobile.jpg') no-repeat;
+    background: $color-deep-sky-blue, url("../../img/production-mobile.jpg") no-repeat;
     background-size: cover;
 
     @include retina {
-      background: $color-deep-sky-blue, url('../../img/production-mobile@2x.jpg') no-repeat;
+      background: $color-deep-sky-blue, url("../../img/production-mobile@2x.jpg") no-repeat;
       background-size: cover;
     }
   }
 }
 
 .services__link--production {
-  background: url('../../img/production-desktop.webp') no-repeat;
+  background: url("../../img/production-desktop.webp") no-repeat;
   background-size: cover;
 
   @include vp-1439 {
     @include retina {
-      background: $color-deep-sky-blue, url('../../img/production-desktop@2x.webp') no-repeat;
+      background: $color-deep-sky-blue, url("../../img/production-desktop@2x.webp") no-repeat;
       background-size: cover;
     }
   }
 
   @include vp-1023 {
-    background: $color-deep-sky-blue, url('../../img/production-tablet.webp') no-repeat;
+    background: $color-deep-sky-blue, url("../../img/production-tablet.webp") no-repeat;
     background-size: cover;
 
     @include retina {
-      background: $color-deep-sky-blue, url('../../img/production-tablet@2x.webp') no-repeat;
+      background: $color-deep-sky-blue, url("../../img/production-tablet@2x.webp") no-repeat;
       background-size: cover;
     }
   }
 
   @include vp-767 {
-    background: $color-deep-sky-blue, url('../../img/production-mobile.webp') no-repeat;
+    background: $color-deep-sky-blue, url("../../img/production-mobile.webp") no-repeat;
     background-size: cover;
 
     @include retina {
-      background: $color-deep-sky-blue, url('../../img/production-mobile@2x.webp') no-repeat;
+      background: $color-deep-sky-blue, url("../../img/production-mobile@2x.webp") no-repeat;
       background-size: cover;
     }
   }
 }
 
 .services__link--mounting {
-  background: url('../../img/mounting-desktop.jpg') no-repeat;
+  background: url("../../img/mounting-desktop.jpg") no-repeat;
   background-size: cover;
 
   @include vp-1439 {
     @include retina {
-      background: $color-deep-sky-blue, url('../../img/mounting-desktop@2x.jpg') no-repeat;
+      background: $color-deep-sky-blue, url("../../img/mounting-desktop@2x.jpg") no-repeat;
       background-size: cover;
     }
   }
 
   @include vp-1023 {
-    background: $color-deep-sky-blue, url('../../img/mounting-tablet.jpg') no-repeat;
+    background: $color-deep-sky-blue, url("../../img/mounting-tablet.jpg") no-repeat;
     background-size: cover;
 
     @include retina {
-      background: $color-deep-sky-blue, url('../../img/mounting-tablet@2x.jpg') no-repeat;
+      background: $color-deep-sky-blue, url("../../img/mounting-tablet@2x.jpg") no-repeat;
       background-size: cover;
     }
   }
 
   @include vp-767 {
-    background: $color-deep-sky-blue, url('../../img/mounting-mobile.jpg') no-repeat;
+    background: $color-deep-sky-blue, url("../../img/mounting-mobile.jpg") no-repeat;
     background-size: cover;
 
     @include retina {
-      background: $color-deep-sky-blue, url('../../img/mounting-mobile@2x.jpg') no-repeat;
+      background: $color-deep-sky-blue, url("../../img/mounting-mobile@2x.jpg") no-repeat;
       background-size: cover;
     }
   }
 }
 
 .services__link--mounting {
-  background: url('../../img/mounting-desktop.webp') no-repeat;
+  background: url("../../img/mounting-desktop.webp") no-repeat;
   background-size: cover;
 
   @include vp-1439 {
     @include retina {
-      background: $color-deep-sky-blue, url('../../img/mounting-desktop@2x.webp') no-repeat;
+      background: $color-deep-sky-blue, url("../../img/mounting-desktop@2x.webp") no-repeat;
       background-size: cover;
     }
   }
 
   @include vp-1023 {
-    background: $color-deep-sky-blue, url('../../img/mounting-tablet.webp') no-repeat;
+    background: $color-deep-sky-blue, url("../../img/mounting-tablet.webp") no-repeat;
     background-size: cover;
 
     @include retina {
-      background: $color-deep-sky-blue, url('../../img/mounting-tablet@2x.webp') no-repeat;
+      background: $color-deep-sky-blue, url("../../img/mounting-tablet@2x.webp") no-repeat;
       background-size: cover;
     }
   }
 
   @include vp-767 {
-    background: $color-deep-sky-blue, url('../../img/mounting-mobile.webp') no-repeat;
+    background: $color-deep-sky-blue, url("../../img/mounting-mobile.webp") no-repeat;
     background-size: cover;
 
     @include retina {
-      background: $color-deep-sky-blue, url('../../img/mounting-mobile@2x.webp') no-repeat;
+      background: $color-deep-sky-blue, url("../../img/mounting-mobile@2x.webp") no-repeat;
       background-size: cover;
     }
   }
 }
 
 .services__link--components {
-  background: url('../../img/components-desktop.jpg') no-repeat;
+  background: url("../../img/components-desktop.jpg") no-repeat;
   background-size: cover;
 
   @include vp-1439 {
     @include retina {
-      background: $color-deep-sky-blue, url('../../img/components-desktop@2x.jpg') no-repeat;
+      background: $color-deep-sky-blue, url("../../img/components-desktop@2x.jpg") no-repeat;
       background-size: cover;
     }
   }
 
   @include vp-1023 {
-    background: $color-deep-sky-blue, url('../../img/components-tablet.jpg') no-repeat;
+    background: $color-deep-sky-blue, url("../../img/components-tablet.jpg") no-repeat;
     background-size: cover;
 
     @include retina {
-      background: $color-deep-sky-blue, url('../../img/components-tablet@2x.jpg') no-repeat;
+      background: $color-deep-sky-blue, url("../../img/components-tablet@2x.jpg") no-repeat;
       background-size: cover;
     }
   }
 
   @include vp-767 {
-    background: $color-deep-sky-blue, url('../../img/components-mobile.jpg') no-repeat;
+    background: $color-deep-sky-blue, url("../../img/components-mobile.jpg") no-repeat;
     background-size: cover;
 
     @include retina {
-      background: $color-deep-sky-blue, url('../../img/components-mobile@2x.jpg') no-repeat;
+      background: $color-deep-sky-blue, url("../../img/components-mobile@2x.jpg") no-repeat;
       background-size: cover;
     }
   }
 }
 
 .services__link--components {
-  background: url('../../img/components-desktop.webp') no-repeat;
+  background: url("../../img/components-desktop.webp") no-repeat;
   background-size: cover;
 
   @include vp-1439 {
     @include retina {
-      background: $color-deep-sky-blue, url('../../img/components-desktop@2x.webp') no-repeat;
+      background: $color-deep-sky-blue, url("../../img/components-desktop@2x.webp") no-repeat;
       background-size: cover;
     }
   }
 
   @include vp-1023 {
-    background: $color-deep-sky-blue, url('../../img/components-tablet.webp') no-repeat;
+    background: $color-deep-sky-blue, url("../../img/components-tablet.webp") no-repeat;
     background-size: cover;
 
     @include retina {
-      background: $color-deep-sky-blue, url('../../img/components-tablet@2x.webp') no-repeat;
+      background: $color-deep-sky-blue, url("../../img/components-tablet@2x.webp") no-repeat;
       background-size: cover;
     }
   }
 
   @include vp-767 {
-    background: $color-deep-sky-blue, url('../../img/components-mobile.webp') no-repeat;
+    background: $color-deep-sky-blue, url("../../img/components-mobile.webp") no-repeat;
     background-size: cover;
 
     @include retina {
-      background: $color-deep-sky-blue, url('../../img/components-mobile@2x.webp') no-repeat;
+      background: $color-deep-sky-blue, url("../../img/components-mobile@2x.webp") no-repeat;
       background-size: cover;
     }
   }

@@ -1,62 +1,62 @@
 .main-block {
-  background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url('../../img/about-bg-desktop.jpg') no-repeat;
+  background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../../img/about-bg-desktop.jpg") no-repeat;
   background-size: cover;
 
   @include vp-1439 {
     @include retina {
-      background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url('../../img/about-bg-desktop@2x.jpg');
+      background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../../img/about-bg-desktop@2x.jpg");
       background-size: cover;
     }
   }
 
   @include vp-1023 {
-    background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url('../../img/about-bg-tablet.jpg') no-repeat;
+    background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../../img/about-bg-tablet.jpg") no-repeat;
     background-size: cover;
 
     @include retina {
-      background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url('../../img/about-bg-tablet@2x.jpg') no-repeat;
+      background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../../img/about-bg-tablet@2x.jpg") no-repeat;
       background-size: cover;
     }
   }
 
   @include vp-767 {
-    background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url('../../img/about-bg-mobile.jpg') no-repeat;
+    background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../../img/about-bg-mobile.jpg") no-repeat;
     background-size: cover;
 
     @include retina {
-      background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url('../../img/about-bg-mobile@2x.jpg') no-repeat;
+      background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../../img/about-bg-mobile@2x.jpg") no-repeat;
       background-size: cover;
     }
   }
 }
 
 .main-block {
-  background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url('../../img/about-bg-desktop.webp') no-repeat;
+  background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../../img/about-bg-desktop.webp") no-repeat;
   background-size: cover;
 
   @include vp-1439 {
     @include retina {
-      background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url('../../img/about-bg-desktop@2x.webp') no-repeat;
+      background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../../img/about-bg-desktop@2x.webp") no-repeat;
       background-size: cover;
     }
   }
 
   @include vp-1023 {
-    background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url('../../img/about-bg-tablet.webp') no-repeat;
+    background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../../img/about-bg-tablet.webp") no-repeat;
     background-size: cover;
 
     @include retina {
-      background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url('../../img/about-bg-tablet@2x.webp') no-repeat;
+      background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../../img/about-bg-tablet@2x.webp") no-repeat;
       background-size: cover;
     }
   }
 
   @include vp-767 {
-    background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url('../../img/about-bg-mobile.webp') no-repeat;
+    background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../../img/about-bg-mobile.webp") no-repeat;
     background-size: cover;
 
     @include retina {
-      background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url('../../img/about-bg-mobile@2x.webp') no-repeat;
+      background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../../img/about-bg-mobile@2x.webp") no-repeat;
       background-size: cover;
     }
   }

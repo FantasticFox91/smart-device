@@ -5,19 +5,17 @@
 
   &::before {
     position: absolute;
-    content: '';
+    content: "";
     width: 150px;
     height: 320px;
     left: 0;
-    background: url('../../img/2022.png');
-    background: url('../../img/2022.webp');
+    background: url("../../img/2022.png");
     background-size: contain;
   }
 
   @include retina {
     &::before {
-      background: url('../../img/2022@2x.png');
-      background: url('../../img/2022@2x.webp');
+      background: url("../../img/2022@2x.png");
       background-size: contain;
     }
   }
@@ -38,9 +36,18 @@
 
   @include vp-767 {
     padding: 0 25px 80px;
+
     &::before {
       display: none;
     }
+  }
+}
+
+.about__container::before {
+  background: url("../../img/2022.webp");
+
+  @include retina {
+    background: url("../../img/2022@2x.webp");
   }
 }
 

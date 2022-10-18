@@ -3,13 +3,8 @@
   color: $color-default-white;
 }
 
-.footer .accordion-close:last-of-type {
-  border-bottom: 1px solid tomato;
-}
-
 .footer__container {
   display: flex;
-  max-width: 1220px;
   padding: 49px 0 44px;
 
   @include vp-767 {
@@ -50,11 +45,7 @@
     .footer__item {
       margin-bottom: 15px;
     }
-  }
-}
 
-.footer__list--contacts {
-  @include vp-767 {
     .footer__item--tel {
       line-height: 25px;
       margin-bottom: 3px;

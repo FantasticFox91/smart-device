@@ -1,10 +1,11 @@
 .modal {
   position: fixed;
-  top: 0;
-  right: 0;
+  top: -106px;
+  right: 15px;
   bottom: 0;
   left: 0;
   z-index: 1000;
+  color: $color-default-white;
 
   display: flex;
   flex-direction: column;
@@ -59,22 +60,25 @@
   &__content {
     position: relative;
 
-    width: 600px;
+    width: 500px;
     padding: 40px;
+    padding-top: 43px;
 
-    background-color: $color-default-white;
+    background-color: $color-deep-sky-blue;
 
     @include vp-767 {
       width: 100%;
       padding: 20px;
+      padding-top: 40px;
     }
   }
 
   &__close-btn {
     position: absolute;
-    top: 22px;
-    right: 22px;
+    top: 18px;
+    right: 16px;
     z-index: 1;
+    fill: $color-default-white;
 
     width: 40px;
     height: 40px;
@@ -115,5 +119,64 @@
     opacity: 1;
 
     pointer-events: auto;
+  }
+
+  form {
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: $ff-main;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  button {
+    display: block;
+    margin-right: 0;
+    margin-bottom: 20px;
+
+    @include vp-767 {
+      min-width: auto;
+    }
+  }
+
+  label {
+    display: block;
+    margin-left: 8px;
+    max-width: none;
+    padding-top: 0;
+    align-self: start;
+    line-height: 20px;
+  }
+
+  span {
+    top: 0;
+  }
+
+  h2 {
+    margin: 0;
+    font-family: $ff-secondary;
+    margin-bottom: 11px;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 400;
+  }
+
+  p {
+    margin: 0;
+    margin-bottom: 37px;
+    padding-right: 20px;
+    font-family: $ff-main;
+    line-height: 22px;
+  }
+
+  input {
+    line-height: 20px;
+  }
+
+  textarea {
+    margin-bottom: 25px;
   }
 }
