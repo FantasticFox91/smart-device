@@ -1,8 +1,8 @@
 .header {
-  background: $black-pearl-to-bottom;
   position: fixed;
   width: 100%;
   min-height: 120px;
+  background: $black-pearl-to-bottom;
   z-index: 2;
 
   @include vp-767 {
@@ -16,7 +16,6 @@
 
 .header__container {
   display: flex;
-  max-width: 1220px;
   align-items: center;
   justify-content: space-between;
   padding: 22px 61px 34px 0;
@@ -117,7 +116,8 @@
   line-height: 16px;
   color: $color-alice-blue;
   letter-spacing: 0.05em;
-  transition: $trans-default;
+  transition: background-color $trans-default;
+  user-select: none;
 
   @include vp-1023 {
     display: none;

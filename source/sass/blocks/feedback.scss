@@ -1,5 +1,5 @@
 .feedback {
-  background: linear-gradient(139deg,$color-cerulean 33%, $color-deep-sky-blue 33%);
+  background: linear-gradient(139deg, $color-cerulean 33%, $color-deep-sky-blue 33%);
 
   @include vp-1023 {
     background: $color-deep-sky-blue;

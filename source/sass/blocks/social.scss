@@ -23,7 +23,7 @@
 
 .social__icon {
   fill: $color-alice-blue-social;
-  transition: $trans-default;
+  transition: fill $trans-default;
 }
 
 @media (hover: hover) {

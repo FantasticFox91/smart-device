@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="'Smart Device' - умные технологии">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
@@ -13,10 +15,8 @@
     <link rel="preload" href="fonts/PTMono-Regular.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/RobotoCondensed-Bold.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/RobotoCondensed-Regular.woff2" as="font" crossorigin="anonymous">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-    <title>Smart Device</title>
     <link rel="stylesheet" href="css/style.min.css">
+    <title>Smart Device</title>
   </head>
   <body>
     <h1 class="visually-hidden">'Smart Device' - умные технологии</h1>
@@ -50,6 +50,11 @@
       </header>
       <main class="main">
         <section class="main-block">
+          <picture>
+            <source type="image/webp" srcset="./img/about-bg-desktop.webp, ./img/about-bg-desktop@2x.webp 2x" width="1920" height="880">
+
+            <img class="main-block__background" src="./img/about-bg-desktop.jpg" srcset="./img/about-bg-desktop@2x.jpg" alt="Плата с микросхемами" width="1920" height="880">
+          </picture>
           <div class="container main-block__container">
             <h2>Печатные платы</h2>
             <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
@@ -105,6 +110,11 @@
         </section>
         <section class="about">
           <div class="container about__container">
+            <picture>
+              <source type="image/webp" srcset="./img/2022.webp, ./img/2022@2x.webp 2x" width="150" height="320">
+
+              <img class="about__image" src="./img/2022.png" srcset="./img/2022@2x.png" alt="2022" width="150" height="320">
+            </picture>
             <h2 class="heading">О компании</h2>
             <p>Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.</p>
             <p> Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND.</p>
@@ -117,7 +127,7 @@
         <section class="services">
           <div class="container services__container">
             <h2 class="heading heading--showtablet">Smart Device предлагает следующие товары и услуги</h2>
-            <h2 class="heading heading--showmobile">Товары и услуги Smart Device</h2>
+            <p class="heading heading--showmobile">Товары и услуги Smart Device</p>
             <ul class="services__list">
               <li class="services__item">
                 <a href="#" class="services__link services__link--production">
@@ -164,15 +174,14 @@
             </picture>
             <div class="feedback__form">
               <h2 class="heading feedback__heading">Остались вопросы? Задайте их нам!</h2>
-              <form class="form" action="#" method="post">
+              <form class="form" action="https://echo.htmlacademy.ru" method="post">
                 <p class="feedback__subheading">Мы проконсультируем Вас бесплатно</p>
-                <input type="text" name="first-name" placeholder="Имя">
-                <input type="tel" name="phone-number" placeholder="Телефон">
+                <input type="text" name="first-name" placeholder="Имя" required>
+                <input type="tel" name="phone-number" placeholder="Телефон" required>
                 <textarea name="question" cols="30" rows="6" placeholder="Ваш вопрос"></textarea>
                 <button type="submit">Задать вопрос</button>
-                <input type="checkbox" name="personal-information-agree" value="agree" id="personal-information">
                 <label>
-                  <input type="checkbox" name="personal-information-agree" value="agree" checked/>
+                  <input type="checkbox" name="personal-information-agree" value="agree" required>
                   <span></span>
                   Я согласен на обработку  персональных данных
                 </label>
@@ -221,7 +230,7 @@
             </div>
           </div>
           <div class="footer__nav navigation accordion">
-            <h2 class="heading heading--footer accordion__heading">Разделы сайта</h2>
+            <h2 class="heading heading--footer accordion__heading" >Разделы сайта</h2>
             <ul class="footer__list navigation__list accordion__list">
               <li class="footer__item">
                 <a class="footer__link" href="#">О Компаниии</a>
@@ -266,22 +275,20 @@
         </div>
       </footer>
     </div>
-
-    <!-- Модалки -->
+    <!-- Модалкa -->
     <div class="modal modal--preload" data-modal="feedback">
       <div class="modal__wrapper">
         <div class="modal__overlay" data-close-modal></div>
         <div class="modal__content">
-          <form class="form" action="#" method="post">
+          <form class="form" action="https://echo.htmlacademy.ru" method="post">
             <h2>Закажите звонок</h2>
             <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
-            <input type="text" name="first-name" placeholder="Имя">
-            <input type="tel" name="phone-number" placeholder="Телефон">
+            <input type="text" name="first-name" placeholder="Имя" required>
+            <input type="tel" name="phone-number" placeholder="Телефон" required>
             <textarea name="question" cols="30" rows="6" placeholder="Ваш вопрос"></textarea>
             <button type="submit">Отправить</button>
-            <input type="checkbox" name="personal-information-agree" value="agree" id="personal-information">
             <label>
-              <input type="checkbox" name="personal-information-agree" value="agree" checked/>
+              <input type="checkbox" name="personal-information-agree" value="agree" required>
               <span></span>
               Я согласен на обработку  персональных данных
             </label>
@@ -294,21 +301,6 @@
         </div>
       </div>
     </div>
-
-    <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite_auto.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div>
-
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>
   </body>

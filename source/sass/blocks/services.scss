@@ -58,7 +58,7 @@
   display: block;
   max-width: 350px;
   padding: 47px 140px 544px 40px;
-  transition: $trans-default;
+  transition: outline $trans-default;
 
   @include vp-1023 {
     margin: 0 auto;

@@ -9,16 +9,12 @@
     border: none;
     background-color: rgba(4, 20, 39, 0.15);
     border-radius: 3px;
+    color: $color-default-white;
     cursor: pointer;
   }
 
   input:first-of-type {
     margin-right: 20px;
-  }
-
-  div {
-    display: flex;
-    justify-content: space-between;
   }
 
   input::placeholder {
@@ -57,10 +53,31 @@
     text-transform: uppercase;
     border-radius: 3px;
     letter-spacing: 0.05em;
+    cursor: pointer;
+    transition: background-color $trans-default;
+
+    @media (hover: hover) {
+      &:hover {
+        background-color: $color-cerulean;
+      }
+    }
   }
 
   input[type="checkbox"] {
-    display: none;
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+
+    white-space: nowrap;
+
+    border: 0;
+
+    clip: rect(0 0 0 0);
+    clip-path: inset(100%);
   }
 
   label {
@@ -89,6 +106,10 @@
 
   input[type="checkbox"]:checked + span {
     background: url("../../img/sprite/checkmark.svg") no-repeat 20% 50%;
+  }
+
+  input[type="checkbox"]:focus + span {
+    border-color: $color-black-pearl;
   }
 
   @include vp-1023 {
@@ -131,15 +152,14 @@
     display: flex;
     flex-direction: column;
 
-    div {
-      flex-direction: column;
-      justify-content: flex-start;
-    }
-
     input {
       min-width: auto;
       width: 100%;
       margin-bottom: 20px;
+    }
+
+    input:first-of-type {
+      margin-right: 0;
     }
 
     textarea {

@@ -1,65 +1,12 @@
 .main-block {
-  background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../../img/about-bg-desktop.jpg") no-repeat;
-  background-size: cover;
-
-  @include vp-1439 {
-    @include retina {
-      background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../../img/about-bg-desktop@2x.jpg");
-      background-size: cover;
-    }
-  }
-
-  @include vp-1023 {
-    background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../../img/about-bg-tablet.jpg") no-repeat;
-    background-size: cover;
-
-    @include retina {
-      background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../../img/about-bg-tablet@2x.jpg") no-repeat;
-      background-size: cover;
-    }
-  }
-
-  @include vp-767 {
-    background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../../img/about-bg-mobile.jpg") no-repeat;
-    background-size: cover;
-
-    @include retina {
-      background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../../img/about-bg-mobile@2x.jpg") no-repeat;
-      background-size: cover;
-    }
-  }
+  position: relative;
 }
 
-.main-block {
-  background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../../img/about-bg-desktop.webp") no-repeat;
-  background-size: cover;
-
-  @include vp-1439 {
-    @include retina {
-      background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../../img/about-bg-desktop@2x.webp") no-repeat;
-      background-size: cover;
-    }
-  }
-
-  @include vp-1023 {
-    background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../../img/about-bg-tablet.webp") no-repeat;
-    background-size: cover;
-
-    @include retina {
-      background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../../img/about-bg-tablet@2x.webp") no-repeat;
-      background-size: cover;
-    }
-  }
-
-  @include vp-767 {
-    background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../../img/about-bg-mobile.webp") no-repeat;
-    background-size: cover;
-
-    @include retina {
-      background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../../img/about-bg-mobile@2x.webp") no-repeat;
-      background-size: cover;
-    }
-  }
+.main-block__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
 .main-block__container {
@@ -96,11 +43,9 @@
   margin: 0;
   margin-bottom: 32px;
   text-transform: uppercase;
-  font-family: $ff-secondary;
-  font-size: 80px;
-  line-height: 94px;
-  font-weight: 700;
   letter-spacing: 0.07em;
+
+  @include fonts($ff-secondary, 80px, 94px, 700, $color-default-white);
 
   @include vp-1023 {
     margin-bottom: 0;
@@ -141,15 +86,12 @@
   padding: 15px 25px 19px;
   text-align: center;
   background-color: $color-deep-sky-blue;
-  font-family: $ff-secondary;
-  font-size: 18px;
-  line-height: 21px;
-  font-weight: 700;
   letter-spacing: 0.05em;
-  color: $color-alice-blue;
   text-transform: uppercase;
   border-radius: 3px;
-  transition: $trans-default;
+  transition: background-color $trans-default;
+
+  @include fonts($ff-secondary, 18px, 21px, 700, $color-alice-blue);
 
   @include vp-1023 {
     margin-left: 45px;
@@ -165,7 +107,7 @@
 
   @media (hover: hover) {
     &:hover {
-      background-color: $color-default-black;
+      background-color: $color-cerulean;
     }
   }
 }
