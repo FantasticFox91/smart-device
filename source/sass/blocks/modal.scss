@@ -130,6 +130,7 @@
 
   input {
     width: 100%;
+    line-height: 20px;
   }
 
   button {
@@ -170,10 +171,6 @@
     padding-right: 20px;
     font-family: $ff-main;
     line-height: 22px;
-  }
-
-  input {
-    line-height: 20px;
   }
 
   textarea {
