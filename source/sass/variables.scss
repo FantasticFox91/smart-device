@@ -38,7 +38,7 @@ $fz-mobile:                         14px;
 // у некоторых шрифтов в ios возникают проблемы с символом рубля
 // https://www.artlebedev.ru/kovodstvo/sections/159/#13
 $ff-rouble:                         "Rouble", "Arial", sans-serif;
-$ff-main:                           "PT Mono", sans-serif;
+$ff-main:                           "PT Mono","Arial", serif;
 $ff-secondary:                      "Roboto Condensed", sans-serif;
 $ff-placeholder:                    "Placeholder", "Arial", sans-serif;
 

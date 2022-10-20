@@ -80,7 +80,7 @@
     clip-path: inset(100%);
   }
 
-  label {
+  label:has(input) {
     position: relative;
     display: inline-block;
     vertical-align: middle;
@@ -105,7 +105,7 @@
   }
 
   input[type="checkbox"]:checked + span {
-    background: url("../../img/sprite/checkmark.svg") no-repeat 20% 50%;
+    background: url("../img/sprite/checkmark.svg") no-repeat 20% 50%;
   }
 
   input[type="checkbox"]:focus + span {
@@ -120,10 +120,6 @@
     input {
       min-width: 320px;
       height: 50px;
-    }
-
-    div {
-      gap: 30px;
     }
 
     textarea {
@@ -144,7 +140,7 @@
     }
 
     input[type="checkbox"]:checked + span {
-      background: url("../../img/sprite/checkmark.svg") no-repeat 25% 45%;
+      background: url("../img/sprite/checkmark.svg") no-repeat 25% 45%;
     }
   }
 
@@ -184,5 +180,61 @@
       top: calc(50% - 8px);
       left: 5px;
     }
+  }
+}
+
+.form--modal {
+  margin-left: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: $ff-main;
+
+  input {
+    width: 100%;
+    line-height: 20px;
+  }
+
+  button {
+    display: block;
+    margin-right: 0;
+    margin-bottom: 20px;
+
+    @include vp-767 {
+      min-width: auto;
+    }
+  }
+
+  label {
+    display: block;
+    margin-left: 8px;
+    max-width: none;
+    padding-top: 0;
+    align-self: start;
+    line-height: 20px;
+  }
+
+  span {
+    top: 0;
+  }
+
+  h2 {
+    margin: 0;
+    font-family: $ff-secondary;
+    margin-bottom: 11px;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 400;
+  }
+
+  p {
+    margin: 0;
+    margin-bottom: 37px;
+    padding-right: 20px;
+    font-family: $ff-main;
+    line-height: 22px;
+  }
+
+  textarea {
+    margin-bottom: 25px;
   }
 }

@@ -637,7 +637,7 @@ html {
 
 .main {
   margin-top: 119px;
-  font-family: "PT Mono", sans-serif;
+  font-family: "PT Mono", "Arial", serif;
   font-size: 16px;
 }
 
@@ -683,7 +683,7 @@ html {
   position: relative;
   display: block;
   padding: 20px 0 20px 35px;
-  font-family: "PT Mono", sans-serif;
+  font-family: "PT Mono", "Arial", serif;
   color: #f2f5f6;
   -webkit-transition: 0.3s ease;
   -o-transition: 0.3s ease;
@@ -700,11 +700,11 @@ html {
 }
 
 .header__link--mail::before {
-  background: url("../../img/sprite/mail.svg") no-repeat;
+  background: url("../img/sprite/mail.svg") no-repeat;
 }
 
 .header__link--phone::before {
-  background: url("../../img/sprite/phone.svg") no-repeat;
+  background: url("../img/sprite/phone.svg") no-repeat;
 }
 
 .header__button {
@@ -793,6 +793,7 @@ html {
   top: 0;
   left: 0;
   z-index: -1;
+  background: #026693;
 }
 
 .main-block__container {
@@ -929,7 +930,7 @@ html {
 
 .about h2 {
   margin-bottom: 14px;
-  color: #000000;
+  color: #041427;
 }
 
 .about p {
@@ -1231,7 +1232,7 @@ html {
   clip-path: inset(100%);
 }
 
-.form label {
+.form label:has(input) {
   position: relative;
   display: inline-block;
   vertical-align: middle;
@@ -1257,11 +1258,70 @@ html {
 }
 
 .form input[type="checkbox"]:checked + span {
-  background: url("../../img/sprite/checkmark.svg") no-repeat 20% 50%;
+  background: url("../img/sprite/checkmark.svg") no-repeat 20% 50%;
 }
 
 .form input[type="checkbox"]:focus + span {
   border-color: #041427;
+}
+
+.form--modal {
+  margin-left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  font-family: "PT Mono", "Arial", serif;
+}
+
+.form--modal input {
+  width: 100%;
+  line-height: 20px;
+}
+
+.form--modal button {
+  display: block;
+  margin-right: 0;
+  margin-bottom: 20px;
+}
+
+.form--modal label {
+  display: block;
+  margin-left: 8px;
+  max-width: none;
+  padding-top: 0;
+  -ms-flex-item-align: start;
+  -ms-grid-row-align: start;
+  align-self: start;
+  line-height: 20px;
+}
+
+.form--modal span {
+  top: 0;
+}
+
+.form--modal h2 {
+  margin: 0;
+  font-family: "Roboto Condensed", sans-serif;
+  margin-bottom: 11px;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+}
+
+.form--modal p {
+  margin: 0;
+  margin-bottom: 37px;
+  padding-right: 20px;
+  font-family: "PT Mono", "Arial", serif;
+  line-height: 22px;
+}
+
+.form--modal textarea {
+  margin-bottom: 25px;
 }
 
 .footer {
@@ -1295,7 +1355,7 @@ html {
 }
 
 .footer__link {
-  font-family: "PT Mono", sans-serif;
+  font-family: "PT Mono", "Arial", serif;
   line-height: 22px;
   color: rgba(255, 255, 255, 0.7);
   -webkit-transition: color 0.3s ease;
@@ -1480,68 +1540,6 @@ html {
   visibility: visible;
   opacity: 1;
   pointer-events: auto;
-}
-
-.modal form {
-  margin-left: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  font-family: "PT Mono", sans-serif;
-}
-
-.modal input {
-  width: 100%;
-}
-
-.modal button {
-  display: block;
-  margin-right: 0;
-  margin-bottom: 20px;
-}
-
-.modal label {
-  display: block;
-  margin-left: 8px;
-  max-width: none;
-  padding-top: 0;
-  -ms-flex-item-align: start;
-  -ms-grid-row-align: start;
-  align-self: start;
-  line-height: 20px;
-}
-
-.modal span {
-  top: 0;
-}
-
-.modal h2 {
-  margin: 0;
-  font-family: "Roboto Condensed", sans-serif;
-  margin-bottom: 11px;
-  font-size: 30px;
-  line-height: 30px;
-  font-weight: 400;
-}
-
-.modal p {
-  margin: 0;
-  margin-bottom: 37px;
-  padding-right: 20px;
-  font-family: "PT Mono", sans-serif;
-  line-height: 22px;
-}
-
-.modal input {
-  line-height: 20px;
-}
-
-.modal textarea {
-  margin-bottom: 25px;
 }
 
 /* @media (hover: hover), screen and (min-width: 0\0) {
@@ -1813,10 +1811,6 @@ html {
     height: 50px;
   }
 
-  .form div {
-    gap: 30px;
-  }
-
   .form textarea {
     padding-top: 32px;
   }
@@ -1837,7 +1831,7 @@ html {
   }
 
   .form input[type="checkbox"]:checked + span {
-    background: url("../../img/sprite/checkmark.svg") no-repeat 25% 45%;
+    background: url("../img/sprite/checkmark.svg") no-repeat 25% 45%;
   }
 
   .footer__container {
@@ -2170,6 +2164,10 @@ html {
     left: 5px;
   }
 
+  .form--modal button {
+    min-width: auto;
+  }
+
   .footer__container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2314,10 +2312,6 @@ html {
 
   .modal--fit-content .modal__content {
     width: 100%;
-  }
-
-  .modal button {
-    min-width: auto;
   }
 }
 
