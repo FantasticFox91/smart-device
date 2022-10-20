@@ -4,9 +4,21 @@
 
 .main-block__background {
   position: absolute;
+  object-fit: cover;
+  height: 880px;
   top: 0;
   left: 0;
   z-index: -1;
+
+  @include vp-1023 {
+    height: 640px;
+    object-position: -123px 0;
+  }
+
+  @include vp-767 {
+    height: 560px;
+    object-position: -230px 0;
+  }
 }
 
 .main-block__container {
@@ -115,6 +127,14 @@
 .main-block__text--showtablet {
   @include vp-767 {
     display: none;
+  }
+}
+
+.main-block br {
+  display: none;
+
+  @include vp-767 {
+    display: block;
   }
 }
 
