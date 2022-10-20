@@ -1017,7 +1017,7 @@ html {
   overflow: hidden;
 }
 
-.service__image-container {
+.services__image-container {
   position: absolute;
   width: 100%;
   height: 100%;
