@@ -9,9 +9,9 @@
 .feedback__container {
   position: relative;
   display: flex;
+  justify-content: space-between;
   padding-top: 164px;
   padding-bottom: 250px;
-  gap: 115px;
   color: $color-default-white;
 
   @include vp-1439 {
@@ -69,7 +69,10 @@
 }
 
 .feedback__form {
+  margin-right: 9px;
+
   @include vp-1023 {
     width: 100%;
+    margin-right: 0;
   }
 }

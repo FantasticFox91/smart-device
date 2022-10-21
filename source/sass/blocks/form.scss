@@ -10,7 +10,7 @@
     background-color: rgba(4, 20, 39, 0.15);
     border-radius: 3px;
     color: $color-default-white;
-    cursor: pointer;
+    cursor: text;
   }
 
   input:first-of-type {
@@ -30,7 +30,7 @@
     border: none;
     background-color: rgba(4, 20, 39, 0.15);
     border-radius: 3px;
-    cursor: pointer;
+    cursor: text;
   }
 
   textarea::placeholder {

@@ -1105,9 +1105,11 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   padding-top: 164px;
   padding-bottom: 250px;
-  gap: 115px;
   color: #ffffff;
 }
 
@@ -1125,6 +1127,10 @@ html {
   margin-top: 81px;
 }
 
+.feedback__form {
+  margin-right: 9px;
+}
+
 .form {
   max-width: 580px;
   margin-left: 5px;
@@ -1138,7 +1144,7 @@ html {
   background-color: rgba(4, 20, 39, 0.15);
   border-radius: 3px;
   color: #ffffff;
-  cursor: pointer;
+  cursor: text;
 }
 
 .form input:first-of-type {
@@ -1174,7 +1180,7 @@ html {
   border: none;
   background-color: rgba(4, 20, 39, 0.15);
   border-radius: 3px;
-  cursor: pointer;
+  cursor: text;
 }
 
 .form textarea::-webkit-input-placeholder {
@@ -1799,6 +1805,7 @@ html {
 
   .feedback__form {
     width: 100%;
+    margin-right: 0;
   }
 
   .form {
