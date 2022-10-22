@@ -19,12 +19,12 @@
   margin: 0;
   padding: 0;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, minmax(300px, 1fr));
+  grid-template-rows: repeat(2, minmax(300px, max-content));
   gap: 30px;
   list-style-type: none;
 
   @include vp-1023 {
-    grid-template-rows: repeat(2, minmax(360px, 1fr));
+    grid-template-rows: repeat(2, minmax(360px, max-content));
   }
 
   @include vp-767 {

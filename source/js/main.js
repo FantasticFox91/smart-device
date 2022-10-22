@@ -22,8 +22,8 @@ window.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  if (document.querySelector('input[type="tel"]')) {
-    const inputs = document.querySelectorAll('input[type="tel"]');
+  if (document.querySelector('input[data-js="phone-number"]')) {
+    const inputs = document.querySelectorAll('input[data-js="phone-number"]');
 
     const prefixNumber = (str) => {
       if (str === '7') {
@@ -72,6 +72,19 @@ window.addEventListener('DOMContentLoaded', () => {
     }));
   }
 
+  if (document.querySelector('form')) {
+    const forms = document.querySelectorAll('form');
+    forms.forEach((form) => {
+      form.addEventListener('submit', (e) => {
+        if (validatePhoneNumber(form.querySelector('input[data-js="phone-number"]'))) {
+          return;
+        }
+        e.preventDefault();
+        showError(form.querySelector('input[data-js="phone-number"]'));
+      });
+    });
+  }
+
   // Utils
   // ---------------------------------
 
@@ -102,6 +115,15 @@ const showAccordion = (e) => {
 const hideAccrodions = () => {
   const accordions = document.querySelectorAll('.accordion__heading');
   accordions.forEach((el) => el.classList.toggle('accordion__heading--close'));
+};
+
+const validatePhoneNumber = (phoneInput) => phoneInput.value.length >= 18;
+
+const showError = (element) => {
+  element.classList.add('error');
+  setTimeout(() => {
+    element.classList.remove('error');
+  }, 2000);
 };
 
 // ---------------------------------

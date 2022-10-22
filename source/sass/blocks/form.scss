@@ -1,5 +1,5 @@
 .form {
-  max-width: 580px;
+  width: 580px;
   margin-left: 5px;
 
   input {
@@ -30,6 +30,7 @@
     border: none;
     background-color: rgba(4, 20, 39, 0.15);
     border-radius: 3px;
+    color: $color-default-white;
     cursor: text;
   }
 
@@ -55,6 +56,7 @@
     letter-spacing: 0.05em;
     cursor: pointer;
     transition: background-color $trans-default;
+    user-select: none;
 
     @media (hover: hover) {
       &:hover {
@@ -118,8 +120,17 @@
     margin-left: 0;
 
     input {
+      display: inline-block;
+      width: 100%;
+      vertical-align: middle;
       min-width: 320px;
+      max-width: 320px;
       height: 50px;
+      margin-right: 0;
+    }
+
+    input:first-of-type {
+      margin-right: 20px;
     }
 
     textarea {
@@ -133,6 +144,10 @@
     label {
       padding-top: 10px;
       align-self: stretch;
+    }
+
+    label:has(input) {
+      padding-top: 9px;
     }
 
     span {
@@ -149,6 +164,7 @@
     flex-direction: column;
 
     input {
+      max-width: none;
       min-width: auto;
       width: 100%;
       margin-bottom: 20px;
@@ -165,7 +181,6 @@
     }
 
     button {
-      margin-right: 0;
       margin-bottom: 24px;
       width: 100%;
     }
@@ -180,10 +195,17 @@
       top: calc(50% - 8px);
       left: 5px;
     }
+
+    label:has(input) {
+      align-self: start;
+      padding-top: 0;
+      padding-left: 30px;
+    }
   }
 }
 
 .form--modal {
+  width: 100%;
   margin-left: 0;
   display: flex;
   flex-direction: column;
@@ -206,11 +228,17 @@
 
   label {
     display: block;
-    margin-left: 8px;
+    margin-left: 9px;
     max-width: none;
     padding-top: 0;
     align-self: start;
     line-height: 20px;
+  }
+
+  label:has(input) {
+    max-width: none;
+    padding-top: 0;
+    align-self: start;
   }
 
   span {
@@ -237,4 +265,37 @@
   textarea {
     margin-bottom: 25px;
   }
+
+  @include vp-1023 {
+    input {
+      max-width: none;
+    }
+
+    input:first-of-type {
+      width: 100%;
+      line-height: 20px;
+      margin-right: 0;
+    }
+  }
+
+  @media (max-height: 787px) {
+    gap: 15px;
+
+    h2,
+    p,
+    input,
+    textarea,
+    button {
+      margin-bottom: 0;
+    }
+
+    textarea {
+      flex-shrink: 1;
+      height: 90px;
+    }
+  }
+}
+
+form .error {
+  outline: 1px solid tomato;
 }

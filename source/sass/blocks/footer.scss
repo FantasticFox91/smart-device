@@ -19,7 +19,7 @@
     padding-top: 50px;
     padding-bottom: 65px;
     grid-template-columns: repeat(2, 1fr);
-    gap: 11px 30px;
+    gap: 6px 30px;
   }
 
   @include vp-1439 {
@@ -38,7 +38,7 @@
 .footer__list--contacts {
   .footer__item {
     line-height: 19px;
-    margin-bottom: 5px;
+    margin-bottom: 6px;
   }
 
   @include vp-767 {

@@ -1,7 +1,7 @@
 .modal {
   position: fixed;
-  top: -106px;
-  right: 15px;
+  top: -172px;
+  right: 17px;
   bottom: 0;
   left: 0;
   z-index: 1000;
@@ -25,6 +25,10 @@
 
   -ms-overflow-style: none;
   scrollbar-width: none;
+
+  @media (max-height: 767px) {
+    top: -40px;
+  }
 
   &::-webkit-scrollbar {
     display: none;
@@ -61,8 +65,7 @@
     position: relative;
 
     width: 500px;
-    padding: 40px;
-    padding-top: 43px;
+    padding: 43px 40px 44px;
 
     background-color: $color-deep-sky-blue;
 

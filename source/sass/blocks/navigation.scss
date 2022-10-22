@@ -1,5 +1,5 @@
 .navigation {
-  margin-right: 44px;
+  margin-right: 28px;
   overflow: hidden;
 
   @include vp-767 {
@@ -9,11 +9,11 @@
 
 .navigation__list {
   display: grid;
-  grid-template-columns: repeat(2, 220px);
-  grid-template-rows: repeat(4, 1fr);
+  max-width: 530px;
+  grid-template-columns: minmax(min-content, 220px) minmax(min-content, 220px);
+  grid-template-rows: repeat(4, min-content);
   grid-auto-flow: column;
-  gap: 8px 30px;
-  max-height: 130px;
+  gap: 8px 40px;
 
   @include vp-767 {
     padding-right: 0;
