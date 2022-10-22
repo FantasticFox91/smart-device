@@ -669,7 +669,7 @@ html {
   display: -ms-flexbox;
   display: flex;
   margin: 0;
-  margin-right: 164px;
+  margin-right: 50px;
   padding: 0;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -736,7 +736,7 @@ html {
 
 .logo {
   margin-top: 5px;
-  margin-right: 160px;
+  margin-right: 46px;
 }
 
 .logo--footer {
@@ -2311,7 +2311,7 @@ form .error {
 
   .footer__left {
     margin-right: 0;
-    padding-bottom: 29px;
+    padding-bottom: 24px;
     padding-right: 6px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2324,6 +2324,12 @@ form .error {
     -ms-flex-align: center;
     align-items: center;
     border-bottom: 1px solid rgba(248, 253, 255, 0.7);
+  }
+
+  .social__list {
+    padding-top: 5px;
+    padding-left: 10px;
+    margin-right: 0;
   }
 
   .navigation {
