@@ -37,12 +37,13 @@
 
 .footer__list--contacts {
   .footer__item {
-    line-height: 19px;
+    line-height: 22px;
     margin-bottom: 6px;
   }
 
   @include vp-767 {
     .footer__item {
+      line-height: 20px;
       margin-bottom: 15px;
     }
 
@@ -69,7 +70,7 @@
 
 .footer__link {
   font-family: $ff-main;
-  line-height: 22px;
+  line-height: 20px;
   color: $color-white-opacity;
   transition: color $trans-default;
 

@@ -767,7 +767,7 @@ html {
 
 .heading--footer {
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
   padding-top: 8px;
   font-size: 15px;
   line-height: 16px;
@@ -1384,7 +1384,7 @@ form .error {
 }
 
 .footer__list--contacts .footer__item {
-  line-height: 19px;
+  line-height: 22px;
   margin-bottom: 6px;
 }
 
@@ -1394,7 +1394,7 @@ form .error {
 
 .footer__link {
   font-family: "PT Mono", "Courier New", monospace;
-  line-height: 22px;
+  line-height: 20px;
   color: rgba(255, 255, 255, 0.7);
   -webkit-transition: color 0.3s ease;
   -o-transition: color 0.3s ease;
@@ -1459,24 +1459,27 @@ form .error {
 }
 
 .navigation {
-  margin-right: 28px;
+  margin-right: 127px;
   overflow: hidden;
 }
 
+.navigation__lists {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 41px;
+}
+
 .navigation__list {
-  display: -ms-grid;
-  display: grid;
-  max-width: 530px;
-  -ms-grid-columns: minmax(-webkit-min-content, 220px) minmax(-webkit-min-content, 220px);
-  -ms-grid-columns: minmax(min-content, 220px) minmax(min-content, 220px);
-  grid-template-columns: minmax(-webkit-min-content, 220px) minmax(-webkit-min-content, 220px);
-  grid-template-columns: minmax(min-content, 220px) minmax(min-content, 220px);
-  -ms-grid-rows: (-webkit-min-content)[4];
-  -ms-grid-rows: (min-content)[4];
-  grid-template-rows: repeat(4, -webkit-min-content);
-  grid-template-rows: repeat(4, min-content);
-  grid-auto-flow: column;
-  gap: 8px 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 8px;
+  max-width: 220px;
 }
 
 .modal {
@@ -1949,14 +1952,16 @@ form .error {
     margin-right: -5px;
   }
 
-  .navigation__list {
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
-    -ms-grid-rows: auto;
-    grid-template-rows: auto;
-    grid-auto-flow: row;
-    max-height: 100%;
-    padding-right: 50px;
+  .navigation {
+    margin-right: 0;
+  }
+
+  .navigation__lists {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 8px;
   }
 }
 
@@ -2284,6 +2289,7 @@ form .error {
   }
 
   .footer__list--contacts .footer__item {
+    line-height: 20px;
     margin-bottom: 15px;
   }
 
@@ -2399,7 +2405,7 @@ form .error {
     border-bottom: 1px solid rgba(248, 253, 255, 0.7);
   }
 
-  .accordion__heading--close + .accordion__list {
+  .accordion__heading--close ~ .accordion__list {
     max-height: 0;
     padding-bottom: 0;
     border-bottom: none;
