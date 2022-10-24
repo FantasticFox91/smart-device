@@ -711,10 +711,10 @@ html {
 
 .header__button {
   display: block;
+  margin-top: 13px;
   min-width: 160px;
-  -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
-  align-self: center;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
   padding: 10px 16px 12px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   border: 1px solid #f2f5f6;
@@ -735,7 +735,9 @@ html {
 }
 
 .logo {
-  margin-top: 5px;
+  margin-top: 8px;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
   margin-right: 46px;
 }
 
@@ -2339,6 +2341,11 @@ form .error {
     -ms-flex-align: center;
     align-items: center;
     border-bottom: 1px solid rgba(248, 253, 255, 0.7);
+  }
+
+  .footer__contacts {
+    width: 100%;
+    max-width: none;
   }
 
   .social__list {

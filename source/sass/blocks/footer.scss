@@ -121,4 +121,9 @@
 .footer__contacts {
   max-width: 345px;
   margin-left: auto;
+
+  @include vp-767 {
+    width: 100%;
+    max-width: none;
+  }
 }

@@ -108,8 +108,9 @@
 
 .header__button {
   display: block;
+  margin-top: 13px;
   min-width: 160px;
-  align-self: center;
+  align-self: flex-start;
   padding: 10px 16px 12px;
   font-family: $ff-secondary;
   border: 1px solid $color-alice-blue;
