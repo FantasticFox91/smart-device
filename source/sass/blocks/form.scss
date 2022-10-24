@@ -277,23 +277,6 @@
       margin-right: 0;
     }
   }
-
-  @media (max-height: 787px) {
-    gap: 15px;
-
-    h2,
-    p,
-    input,
-    textarea,
-    button {
-      margin-bottom: 0;
-    }
-
-    textarea {
-      flex-shrink: 1;
-      height: 90px;
-    }
-  }
 }
 
 form .error {
