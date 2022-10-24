@@ -1706,6 +1706,10 @@ form .error {
     display: none;
   }
 
+  .logo {
+    margin-top: 5px;
+  }
+
   .heading--footer {
     margin-bottom: 22px;
     padding-top: 0;
